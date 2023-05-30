@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Grid</title>
+
+</head>
+
+<body>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+          font-family: Arial;
+        }
+        
+        .header {
+          text-align: center;
+          padding: 32px;
+        }
+        
+        .row {
+          display: -ms-flexbox; /* IE10 */
+          display: flex;
+          -ms-flex-wrap: wrap; /* IE10 */
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+        
+        /* Create four equal columns that sits next to each other */
+        .column {
+          -ms-flex: 25%; /* IE10 */
+          flex: 25%;
+          max-width: 25%;
+          padding: 0 4px;
+        }
+        
+        .column img {
+          margin-top: 8px;
+          vertical-align: middle;
+          width: 100%;
+        }
+        
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+          .column {
+            -ms-flex: 50%;
+            flex: 50%;
+            max-width: 50%;
+          }
+        }
+        
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            -ms-flex: 100%;
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
+        </style>
+        <body>
+        
+        <!-- Header -->
+        <div class="header">
+          <h1>Responsive Image Grid</h1>
+          <p>Resize the browser window to see the responsive effect.</p>
+        </div>
+        
+        <!-- Photo Grid -->
+        <div class="row"> 
+          <div class="column">
+            <img src="https://media.istockphoto.com/id/866198538/photo/glasses-guy.jpg?s=612x612&w=0&k=20&c=LZW-D7fm5we-lq0YHHVYbhNoPHjQ20rkP110FQKwU9k=" style="width:100%">
+            <img src="https://images.iphonephotographyschool.com/10819/1120/iPhone-Photos-Black-And-White-12.jpg" style="width:100%">
+            <img src="https://cdn.mos.cms.futurecdn.net/5PMe5hr8tjSS9Nq5d6Cebe.jpg" style="width:100%">
+            <img src="https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-after/Landscape-BW.jpg" style="width:100%">
+            <img src="https://st2.depositphotos.com/1030808/5852/i/600/depositphotos_58526775-stock-photo-manhattan-downtown.jpg" style="width:100%">
+            <img src="https://hotpot.ai/images/site/ai/colorizer/teaser.jpg" style="width:100%">
+            <img src="https://www.printerbase.co.uk/news/wp-content/uploads/wp/monochrome-photo.jpg" style="width:100%">
+            <img src="https://www.thephotoargus.com/wp-content/uploads/2016/04/BW56.jpg" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="https://media.istockphoto.com/id/1262691718/photo/man-giving-fist-bump-monochrome-black-and-white-image.jpg?s=612x612&w=0&k=20&c=wLXYOXzge6nsMC4f-KSYvP2d8G2nNREmFVQbGFsKzWU=" style="width:100%">
+            <img src="https://images.unsplash.com/photo-1597871040916-4b4c20ba08dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMHBob3RvZ3JhcGh5fGVufDB8fDB8fHww&w=1000&q=80" style="width:100%">
+            <img src="https://i.pinimg.com/originals/a1/3d/66/a13d66c3cb6901af406b14b7dbc73d17.jpg" style="width:100%">
+            <img src="https://images.unsplash.com/photo-1530173822362-c9e47227cb87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8MTAwMjMxNDB8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=420&q=60" style="width:100%">
+            <img src="https://media.istockphoto.com/id/1193133237/photo/new-york-city-skyline-view-at-night-with-yellow-lights-contrasted-against-the-black-and-white.jpg?s=612x612&w=0&k=20&c=3hbl9GywWklc1wiRrbhyeIGx_dgph08cSIS_GE8gMf8=" style="width:100%">
+            
+          </div>  
+          <div class="column">
+            <img src="https://img.freepik.com/free-photo/mother-with-daughter-walking-park-rain-wearing-rubber-boots_1303-22783.jpg?w=2000" style="width:100%">
+            <img src="https://media.istockphoto.com/id/498785545/photo/bicycle-decorated-with-sunflowers-bw-image.jpg?s=612x612&w=0&k=20&c=de59-5PuSI2uZtTIQEIPKPnIXx8DezBkKyZ1_3sR3l0=" style="width:100%">
+            <img src="https://media.istockphoto.com/id/114283861/photo/black-amp-white-press-room.jpg?s=612x612&w=0&k=20&c=NXUqdxPNJKwFfkGT202JQedEUe1lTwoapm4dPr92jrs=" style="width:100%">
+            <img src="https://thumbs.dreamstime.com/b/workplace-computer-laptop-mobile-phone-wood-office-desk-cozy-warm-workspace-chestnut-table-166286402.jpg" style="width:100%">
+            <img src="https://media.istockphoto.com/id/1249162383/photo/protest.jpg?s=612x612&w=0&k=20&c=ikJd_zCmvD07Qf87bnwLLYQbkwZ20paqqVZP7KaH3Us=" style="width:100%">
+            <img src="https://cdn.pixabay.com/photo/2018/06/13/20/07/child-3473596_640.jpg" style="width:100%">
+            <img src="https://images.unsplash.com/photo-1586615844384-a5144a789b2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8OTg3MTM4OHx8ZW58MHx8fHx8&auto=format&fit=crop&w=420&q=60" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="https://st2.depositphotos.com/7988410/10789/i/950/depositphotos_107891642-stock-photo-amazing-sunrise-and-sunset-in.jpg" style="width:100%">
+            <img src="https://media.istockphoto.com/id/171156336/photo/young-women-in-traditional-wedding-dress.jpg?s=612x612&w=0&k=20&c=srCkdWhwektNVjMjCtMfPrb6jKS0SHi2Z0m7m2Bj6Ac=" style="width:100%">
+            <img src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/design/discover/is-black-a-color/desktop/is-black-a-color_P3_720x350.jpg.img.jpg" style="width:100%">
+            <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,w_730/at%2Fhouse%20tours%2F2019-07%2FKate%20F%2F_E5A1154" style="width:100%">
+            <img src="https://gaadiwaadi.com/wp-content/uploads/2020/12/Modified-Mahindra-Thar-white-and-black-1068x603.jpg" style="width:100%">
+            <img src="https://media.gettyimages.com/id/1364138449/fr/photo/chloe-dufour-lapointe-of-canada-at-the-coupe-du-monde-des-bosses-mackenzie-at-tremblant-on.jpg?s=612x612&w=gi&k=20&c=Wj-32x2i-nqDGT9pk2zp4TLvoRxj78huAfsqZGN3lTY=" style="width:100%">
+            <img src="https://images.unsplash.com/photo-1601840859017-d2d164bc3317?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80" style="width:100%">
+            
+          </div>
+        </div>
+        
+</body>
+</html>
